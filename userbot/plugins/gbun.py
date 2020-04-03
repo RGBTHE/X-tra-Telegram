@@ -13,7 +13,7 @@ async def gbun(event):
     gbunVar = event.text
     gbunVar = gbunVar[6:]
     mentions = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\n`"
-    no_reason = "__Reason: Potential Porn Addict. __"
+    no_reason = "__Reason: Scammer be alert. __"
     await event.edit("**Summoning out le Gungnir ❗️⚜️☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
@@ -33,13 +33,13 @@ async def gbun(event):
             jnl=("`Warning!! `"
                   "[{}](tg://user?id={})"
                   "` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\n\n`"
-                  "**Rendi's Name: ** __{}__\n"
+                  "**Full Name: ** __{}__\n"
                   "**ID : ** `{}`\n"
                 ).format(firstname, idd, firstname, idd)
             if usname == None:
-                jnl += "**Victim Nigga's username: ** `Doesn't own a username!`\n"
+                jnl += "**Victim His username: ** `Doesn't own a username!`\n"
             elif usname != "None":
-                jnl += "**Victim Nigga's username** : @{}\n".format(usname)
+                jnl += "**Victim His username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
                 gbunm = "`{}`".format(gbunVar)
                 gbunr = "**Reason: **"+gbunm
@@ -48,6 +48,6 @@ async def gbun(event):
                 jnl += no_reason
             await reply_message.reply(jnl)
     else:
-        mention = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\nReason: Potential Porn Addict. `"
+        mention = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\nReason: Scammer Be alert. `"
         await event.reply(mention)
     await event.delete()
